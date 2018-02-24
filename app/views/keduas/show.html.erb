@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nama:</strong>
+  <%= @kedua.nama %>
+</p>
+
+<p>
+  <strong>Alamat:</strong>
+  <%= @kedua.alamat %>
+</p>
+
+<p>
+  <strong>No hp:</strong>
+  <%= @kedua.no_hp %>
+</p>
+
+<%= link_to 'Edit', edit_kedua_path(@kedua) %> |
+<%= link_to 'Back', keduas_path %>

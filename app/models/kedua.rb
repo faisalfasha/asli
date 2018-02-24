@@ -1,0 +1,2 @@
+class Kedua < ApplicationRecord
+end

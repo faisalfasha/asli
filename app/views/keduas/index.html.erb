@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Keduas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nama</th>
+      <th>Alamat</th>
+      <th>No hp</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @keduas.each do |kedua| %>
+      <tr>
+        <td><%= kedua.nama %></td>
+        <td><%= kedua.alamat %></td>
+        <td><%= kedua.no_hp %></td>
+        <td><%= link_to 'Show', kedua %></td>
+        <td><%= link_to 'Edit', edit_kedua_path(kedua) %></td>
+        <td><%= link_to 'Destroy', kedua, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Kedua', new_kedua_path %>
