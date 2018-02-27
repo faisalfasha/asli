@@ -40,6 +40,20 @@ en:
         delimiter: ","
         format:    "%u%n"
 
+  activerecord:
+    models:
+      order:       "Order"
+    attributes:
+      order:
+        address:   "Address"
+        name:      "Name"
+        email:     "Email"
+        pay_type:  "Pay Type"
+    errors:
+      messages:
+        inclusion: "Inclusion"
+        blank:     "cannot blank field"
+
   errors:
     template:
       body:        "There were problems with the following fields:"
